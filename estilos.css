@@ -1,0 +1,407 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'League Spartan';
+    
+}
+ 
+.container{
+    
+    height: 100vh; /* para que el fondo de color ocupe todo el ancho*/
+    min-height: 650px;
+    background-image: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
+        
+}
+
+.content{
+    width: 90%;
+    margin: 10px auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+ 
+    
+}
+.titulo{
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;
+    font-size: 34px;
+    padding: 1em;
+    text-align: center;
+}
+.parrafo{
+    color:hsl(303, 10%, 53%);
+    font-weight: 400;
+    word-spacing: 0.2em;
+    font-size: 15px;
+    text-align:center;
+    padding-bottom: 1.5em;
+    
+    
+
+} 
+.comestrella{
+    
+    color: hsl(300, 43%, 22%);
+    font-weight: 700;  
+    text-align: center;
+    
+
+}
+
+.caja1{
+    background-color:hsl(300, 24%, 96%); 
+    
+    height: 64px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.2em;
+}
+.caja2{
+    background-color:hsl(300, 24%, 96%); 
+    
+    height: 64px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.2em;
+}
+.caja3{
+    background-color:hsl(300, 24%, 96%); 
+    
+    height: 64px;
+    padding: 10px;
+    margin-bottom: 10px;
+    border-radius: 0.2em;
+}
+.reviews{
+    padding: 0.2em;
+}
+   
+    
+.reportguru{
+    padding: 0.2em;
+
+}
+    
+.besttech{
+    padding: 0.2em;
+    
+}
+
+.estrella{
+    margin: 3px;
+    
+    
+}
+.comentarios{
+    color: white;
+    
+}
+
+.colton{
+    background-color:hsl(300, 43%, 22%); 
+    height: 217px;
+    padding: 13px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.irene{ 
+    background-color:hsl(300, 43%, 22%); 
+    height: 217px;
+    padding: 13px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.anne{ 
+    background-color:hsl(300, 43%, 22%); 
+    height: 217px;
+    padding: 13px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+}
+.img{
+    
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  margin: 13px;
+}
+.nombre{
+    position: relative;
+    bottom: 40px;
+    font-size: 15px;
+
+}
+.verificacion{
+    color: hsl(333, 80%, 67%);
+    position: relative;
+    bottom: 20px;
+    right: 82px;
+    font-size: 13px;
+}
+.texto{
+    padding: 0.5em;
+    line-height: 20px;
+}
+@media (min-width:1024px){
+    .content{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        grid-template-rows:repeat(2, 1fr) ;
+        grid-template-areas: 
+        "titulo estrella"
+        "comentarios comentarios" ;
+    }
+    .titulo{
+        
+        grid-area: titulo;
+        padding: 1em;
+        margin-left: 76.313px;
+        position: relative;
+        top: 20px; 
+        text-align: justify;
+        font-size: 51px;
+    }
+    .parrafo{
+       
+        grid-area: titulo;
+        padding: 5em;
+        text-align: center;
+        margin-left: 36.313px;
+        position: relative;
+        top: 135px;
+        text-align: justify;
+        line-height: 1em;
+        font-size: 18px;
+        word-spacing: 0.4em;
+    }
+    
+    .comestrella{
+        padding: 6em;
+        
+    }
+    
+    
+    .caja1{
+        height: 48px;
+        width: 377px;
+        padding: 16px;
+        margin-left: 10px;
+        position: relative;
+        right: 88px;
+       
+    }
+    .caja2{
+        height: 48px;
+        width: 377px;
+        padding: 16px;
+        margin-left: 10px;
+        position: relative;
+        right: 42px;
+       
+    }
+    .caja3{
+        height: 48px;
+        width: 377px;
+        padding: 16px;
+        margin-left: 10px;
+        
+       
+    }
+    .reviews{
+        padding: 5px;
+        float: right;
+        text-align: center;
+        margin-right: 33px;
+    }
+    .reportguru{
+        padding: 5px;
+        float: right;
+        margin-right: 3px;
+        text-align: center;
+        
+    }
+    .besttech{
+        padding: 5px;
+        float: right;
+        margin-right: 30px;
+        
+    }
+   
+
+    .comentarios{
+        grid-area: comentarios;
+        margin: 5%;
+               
+    }
+    
+    
+    .colton{ 
+        height: 200px;
+        width: 300px;
+        
+        float: left;
+        margin-left: 5%;
+        margin-top: -82px;
+        
+    }
+    .irene{ 
+        height: 200px;
+        width: 300px;
+        
+        float: left;
+        margin-left: 5%;
+        margin-top: -65px;
+    }
+        
+    .anne{ 
+        height: 200px;
+        width: 300px;
+        
+        float: left;
+        margin-left: 5%;
+        margin-top: -44px;
+       
+        
+    }
+    
+    
+
+         
+
+}
+@media (width:1024px){
+    .content{
+        display: grid;
+        grid-template-columns:repeat(2, 1fr) ;
+        grid-template-rows:repeat(2, 1fr) ;
+        grid-template-areas: 
+        "titulo estrella"
+        "comentarios comentarios" ;
+    }
+    .titulo{
+        
+        grid-area: titulo;
+        padding: 1em;
+        margin-left: -55.687px;
+        position: relative;
+        top: 30px; 
+        text-align: justify;
+        font-size: 42px;
+    }
+    .parrafo{
+       
+        grid-area: titulo;
+        padding: 5em;
+        margin-left: -91.687px;
+        position: relative;
+        top: 96px;
+        text-align: justify;
+        line-height: 1em;
+        font-size: 15px;
+        word-spacing: 0.4em;
+    }
+    
+    .comestrella{
+        padding: 4em;
+        
+    }
+    
+    
+    .caja1{
+        height: 48px;
+        width: 377px;
+        padding: 16px;
+        margin-left: 10px;
+        position: relative;
+        right: 21px;
+       
+    }
+    .caja2{
+        height: 48px;
+        width: 377px;
+        padding: 16px;
+        margin-left: 10px;
+        position: relative;
+        right: -20px;
+       
+    }
+    .caja3{
+        height: 48px;
+        width: 377px;
+        padding: 16px;
+        margin-left: 10px;
+        position: relative;
+        right: -61px;
+
+        
+       
+    }
+    .reviews{
+        padding: 5px;
+        float: right;
+        text-align: center;
+        margin-right: 33px;
+    }
+    .reportguru{
+        padding: 5px;
+        float: right;
+        margin-right: 3px;
+        text-align: center;
+        
+    }
+    .besttech{
+        padding: 5px;
+        float: right;
+        margin-right: 30px;
+        
+    }
+   
+
+    .comentarios{
+        grid-area: comentarios;
+        margin: 5%;
+               
+    }
+    
+    
+    .colton{ 
+        height: 200px;
+        width: 300px;
+        
+        float: left;
+        margin-left: -8%;
+        margin-top: -134px;
+        
+    }
+    .irene{ 
+        height: 200px;
+        width: 300px;
+        
+        float: left;
+        margin-left: 2%;
+        margin-top: -166px;
+    }
+        
+    .anne{ 
+        height: 200px;
+        width: 300px;
+        
+        float: left;
+        margin-left: 5%;
+        margin-top: -44px;
+        position: relative;
+        bottom: 149px;
+        left: 538px;
+       
+        
+    }
+
+}
